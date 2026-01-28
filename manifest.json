@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "NTU Learn Record Download",
+  "version": "1.0.0",
+  "description": "Download record video from ntulearn",
+  "permissions": [
+    "storage",
+    "notifications",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "https://ntulearn.ntu.edu.sg/*",
+    "https://cfvod.sgp2.ovp.kaltura.com/hls/*"  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Kaltura Watcher",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+
+  }
+}
